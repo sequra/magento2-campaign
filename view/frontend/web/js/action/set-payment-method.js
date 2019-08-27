@@ -25,7 +25,7 @@ define(
                         fullScreenLoader.stopLoader();
                         window.SequraFormInstance.defaultCloseCallback();
                     });
-                    window.SequraFormInstance.setElement("sq-identification-i1");
+                    window.SequraFormInstance.setElement("sq-identification-pp5");
                     window.SequraFormInstance.show();
                 };
 
