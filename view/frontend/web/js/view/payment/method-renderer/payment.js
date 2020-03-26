@@ -12,10 +12,15 @@ define(
     ],
     function (Component, setPaymentMethodAction, additionalValidators, quote) {
         'use strict';
-
         return Component.extend({
             defaults: {
                 template: 'Sequra_Campaign/payment/form'
+            },
+
+            initObservable: function () {
+                this._super();
+                Sequra.onLoad(function(){Sequra.refreshComponents();});
+                return this;
             },
 
             getProduct: function () {
